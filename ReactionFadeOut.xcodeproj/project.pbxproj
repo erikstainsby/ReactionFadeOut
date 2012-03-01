@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		034CDE3914FFE2C500193D04 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034CDE3814FFE2C500193D04 /* Cocoa.framework */; };
 		034CDE4314FFE2C500193D04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 034CDE4114FFE2C500193D04 /* InfoPlist.strings */; };
+		034CDF0E14FFE4CD00193D04 /* RSTrixiePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034CDF0D14FFE4CD00193D04 /* RSTrixiePlugin.framework */; };
+		034CDF3E14FFE74900193D04 /* ReactionFadeOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 034CDF3C14FFE74900193D04 /* ReactionFadeOut.m */; };
+		034CDF3F14FFE74900193D04 /* ReactionFadeOut.xib in Resources */ = {isa = PBXBuildFile; fileRef = 034CDF3D14FFE74900193D04 /* ReactionFadeOut.xib */; };
+		034CDF4714FFE81800193D04 /* ReactionFadeOut.h in Headers */ = {isa = PBXBuildFile; fileRef = 034CDF3B14FFE74900193D04 /* ReactionFadeOut.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,9 +21,13 @@
 		034CDE3B14FFE2C500193D04 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		034CDE3C14FFE2C500193D04 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		034CDE3D14FFE2C500193D04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		034CDE4014FFE2C500193D04 /* ReactionFadeOut-Info.plist */ = {isa = PBXFileReference; path = "ReactionFadeOut-Info.plist"; sourceTree = "<group>"; };
+		034CDE4014FFE2C500193D04 /* ReactionFadeOut-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactionFadeOut-Info.plist"; sourceTree = "<group>"; };
 		034CDE4214FFE2C500193D04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		034CDE4414FFE2C500193D04 /* ReactionFadeOut-Prefix.pch */ = {isa = PBXFileReference; path = "ReactionFadeOut-Prefix.pch"; sourceTree = "<group>"; };
+		034CDE4414FFE2C500193D04 /* ReactionFadeOut-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactionFadeOut-Prefix.pch"; sourceTree = "<group>"; };
+		034CDF0D14FFE4CD00193D04 /* RSTrixiePlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSTrixiePlugin.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug/RSTrixiePlugin.framework"; sourceTree = "<group>"; };
+		034CDF3B14FFE74900193D04 /* ReactionFadeOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactionFadeOut.h; sourceTree = "<group>"; };
+		034CDF3C14FFE74900193D04 /* ReactionFadeOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactionFadeOut.m; sourceTree = "<group>"; };
+		034CDF3D14FFE74900193D04 /* ReactionFadeOut.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReactionFadeOut.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034CDF0E14FFE4CD00193D04 /* RSTrixiePlugin.framework in Frameworks */,
 				034CDE3914FFE2C500193D04 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +63,7 @@
 		034CDE3714FFE2C500193D04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				034CDF0D14FFE4CD00193D04 /* RSTrixiePlugin.framework */,
 				034CDE3814FFE2C500193D04 /* Cocoa.framework */,
 				034CDE3A14FFE2C500193D04 /* Other Frameworks */,
 			);
@@ -74,6 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				034CDE3F14FFE2C500193D04 /* Supporting Files */,
+				034CDF3B14FFE74900193D04 /* ReactionFadeOut.h */,
+				034CDF3C14FFE74900193D04 /* ReactionFadeOut.m */,
+				034CDF3D14FFE74900193D04 /* ReactionFadeOut.xib */,
 			);
 			path = ReactionFadeOut;
 			sourceTree = "<group>";
@@ -90,6 +103,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		034CDF4614FFE7FD00193D04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034CDF4714FFE81800193D04 /* ReactionFadeOut.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		034CDE3414FFE2C500193D04 /* ReactionFadeOut */ = {
 			isa = PBXNativeTarget;
@@ -98,6 +122,7 @@
 				034CDE3114FFE2C500193D04 /* Sources */,
 				034CDE3214FFE2C500193D04 /* Frameworks */,
 				034CDE3314FFE2C500193D04 /* Resources */,
+				034CDF4614FFE7FD00193D04 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -140,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				034CDE4314FFE2C500193D04 /* InfoPlist.strings in Resources */,
+				034CDF3F14FFE74900193D04 /* ReactionFadeOut.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034CDF3E14FFE74900193D04 /* ReactionFadeOut.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,10 +244,15 @@
 		034CDE4814FFE2C500193D04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Code/Workspaces/Trixie/RSTrixiePlugin/RSTrixiePlugin",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReactionFadeOut/ReactionFadeOut-Prefix.pch";
 				INFOPLIST_FILE = "ReactionFadeOut/ReactionFadeOut-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "@executable_path/../Plugins";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -229,10 +261,15 @@
 		034CDE4914FFE2C500193D04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Code/Workspaces/Trixie/RSTrixiePlugin/RSTrixiePlugin",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReactionFadeOut/ReactionFadeOut-Prefix.pch";
 				INFOPLIST_FILE = "ReactionFadeOut/ReactionFadeOut-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "@executable_path/../Plugins";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
